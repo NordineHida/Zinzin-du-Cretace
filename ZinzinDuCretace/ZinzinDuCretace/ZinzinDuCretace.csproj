@@ -1,0 +1,213 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>ZinzinDuCretace.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Save\**" />
+    <EmbeddedResource Remove="Save\**" />
+    <None Remove="Save\**" />
+    <Page Remove="Save\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sounds\backgroundSound.mp3" />
+    <None Remove="Sounds\bonusTouchFloor.mp3" />
+    <None Remove="Sounds\clickButton.mp3" />
+    <None Remove="Sounds\gameStart.mp3" />
+    <None Remove="Sounds\getBonus.mp3" />
+    <None Remove="Sounds\getBonus.wav" />
+    <None Remove="Sounds\getBonus2.wav" />
+    <None Remove="Sounds\getBonus3.wav" />
+    <None Remove="Sounds\getBonus4.mp3" />
+    <None Remove="Sounds\getBonusPV.mp3" />
+    <None Remove="Sounds\getInvicible.mp3" />
+    <None Remove="Sounds\getInvincible.mp3" />
+    <None Remove="Sounds\getTouched.mp3" />
+    <None Remove="Sounds\getTouched1.mp3" />
+    <None Remove="Sounds\meteoriteBreak.mp3" />
+    <None Remove="Sounds\meteoriteTouchFloor.mp3" />
+    <None Remove="Sounds\meteoriteTouchFloor2.mp3" />
+    <None Remove="Sounds\meteoriteTouchFloor3.mp3" />
+    <None Remove="Sounds\pause.mp3" />
+    <None Remove="Sounds\walk.mp3" />
+    <None Remove="Sprites\background\background.png" />
+    <None Remove="Sprites\bonusInvincible\bonusInvincible.png" />
+    <None Remove="Sprites\bonusPv\bonusPv.png" />
+    <None Remove="Sprites\bonus\1.png" />
+    <None Remove="Sprites\bonus\2.png" />
+    <None Remove="Sprites\bonus\3.png" />
+    <None Remove="Sprites\bonus\4.png" />
+    <None Remove="Sprites\bonus\5.png" />
+    <None Remove="Sprites\bonus\6.png" />
+    <None Remove="Sprites\bonus\7.png" />
+    <None Remove="Sprites\bonus\8.png" />
+    <None Remove="Sprites\bonus\9.png" />
+    <None Remove="Sprites\dinosG\walk0.png" />
+    <None Remove="Sprites\dinosG\walk1.png" />
+    <None Remove="Sprites\dinosG\walk2.png" />
+    <None Remove="Sprites\dinosG\walk3.png" />
+    <None Remove="Sprites\dinosG\walk4.png" />
+    <None Remove="Sprites\dinosG\walk5.png" />
+    <None Remove="Sprites\dinosG\walk6.png" />
+    <None Remove="Sprites\dinosG\walk7.png" />
+    <None Remove="Sprites\dinosG\walk8.png" />
+    <None Remove="Sprites\dinosG\walk9.png" />
+    <None Remove="Sprites\dinosInvincible\D.png" />
+    <None Remove="Sprites\dinosInvincible\G.png" />
+    <None Remove="Sprites\meteorite\1.png" />
+    <None Remove="Sprites\meteorite\2.png" />
+    <None Remove="Sprites\meteorite\3.png" />
+    <None Remove="Sprites\meteorite\4.png" />
+    <None Remove="Sprites\meteorite\meteorite.png" />
+    <None Remove="Sprites\meteorite\meteroite.png" />
+    <None Remove="Sprites\pointVie\0pv.png" />
+    <None Remove="Sprites\pointVie\1pv.png" />
+    <None Remove="Sprites\pointVie\2pv.png" />
+    <None Remove="Sprites\pointVie\3pv.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Sounds\backgroundSound.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\bonusTouchFloor.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\clickButton.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\gameStart.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\getBonus.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\getBonusPV.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\getInvincible.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\getTouched.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\getTouched1.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\meteoriteBreak.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\meteoriteTouchFloor.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\meteoriteTouchFloor2.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\meteoriteTouchFloor3.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\pause.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\walk.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZinzinDuCretace.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="IUTGame">
+      <HintPath>Lib\IUTGame.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sprites\background\background.png" />
+    <Resource Include="Sprites\bonusInvincible\bonusInvincible.png" />
+    <Resource Include="Sprites\bonusPv\bonusPv.png" />
+    <Resource Include="Sprites\bonus\1.png" />
+    <Resource Include="Sprites\bonus\2.png" />
+    <Resource Include="Sprites\bonus\3.png" />
+    <Resource Include="Sprites\bonus\4.png" />
+    <Resource Include="Sprites\bonus\5.png" />
+    <Resource Include="Sprites\bonus\6.png" />
+    <Resource Include="Sprites\bonus\7.png" />
+    <Resource Include="Sprites\bonus\8.png" />
+    <Resource Include="Sprites\bonus\9.png" />
+    <Resource Include="Sprites\dinosG\walk0.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk1.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk2.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk3.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk4.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk5.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk6.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk7.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk8.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosG\walk9.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sprites\dinosD\dead.png" />
+    <Resource Include="Sprites\dinosD\walk0.png" />
+    <Resource Include="Sprites\dinosD\walk9.png" />
+    <Resource Include="Sprites\dinosD\walk1.png" />
+    <Resource Include="Sprites\dinosD\walk2.png" />
+    <Resource Include="Sprites\dinosD\walk3.png" />
+    <Resource Include="Sprites\dinosD\walk4.png" />
+    <Resource Include="Sprites\dinosD\walk5.png" />
+    <Resource Include="Sprites\dinosD\walk6.png" />
+    <Resource Include="Sprites\dinosD\walk7.png" />
+    <Resource Include="Sprites\dinosD\walk8.png" />
+    <Resource Include="Sprites\dinosInvincible\D.png" />
+    <Resource Include="Sprites\dinosInvincible\G.png" />
+    <Resource Include="Sprites\meteorite\meteorite.png" />
+    <Resource Include="Sprites\pointVie\0pv.png" />
+    <Resource Include="Sprites\pointVie\1pv.png" />
+    <Resource Include="Sprites\pointVie\2pv.png" />
+    <Resource Include="Sprites\pointVie\3pv.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Res\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Res\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Res\Strings.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+	
+
+</Project>

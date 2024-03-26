@@ -1,0 +1,67 @@
+﻿<Window x:Class="ZinzinDuCretace.Parametres"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZinzinDuCretace"
+        mc:Ignorable="d"
+        xmlns:res="clr-namespace:ZinzinDuCretace.Res"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        Title="{x:Static res:Strings.TitreParametre}" Height="450" Width="800">
+    <!--Author Nordine / Laszlo / Daouda -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="3" Grid.Row="0">
+            <Label Content="{x:Static res:Strings.TitreParametre}" HorizontalAlignment="Center" Grid.Row="0"  Grid.Column="1" VerticalAlignment="Center" FontSize="40" FontFamily="Calibri" FontWeight="Bold" />
+        </Grid>
+
+        <Grid Grid.RowSpan="4" Grid.ColumnSpan="3">
+            
+                    <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+
+        </Grid.RowDefinitions>
+            <Label Content="{x:Static res:Strings.Volume}" Margin="10,0,0,0" HorizontalAlignment="Left" Grid.Row="1"  Grid.Column="0" VerticalAlignment="Center" FontSize="35" FontFamily="Calibri" FontWeight="Bold"/>
+            <Label Content="{x:Static res:Strings.EffetsSonores}" Margin="10,0,0,0" HorizontalAlignment="Left" Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center" FontSize="35" FontFamily="Calibri" FontWeight="Bold"/>
+            <Label Content="{x:Static res:Strings.PleinEcran}" Margin="10,0,0,0"  HorizontalAlignment="Left" Grid.Row="3"  Grid.Column="0" VerticalAlignment="Center" FontSize="35" FontFamily="Calibri" FontWeight="Bold"/>
+            <Slider x:Name="SliderVolume" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="400"  ValueChanged="Slider_ValueChanged" Maximum="1"/>
+
+            <CheckBox x:Name="FullscreenCheckBox" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="3" VerticalAlignment="Center" Height="17" Width="72"
+                       Checked="FullscreenOn" Unchecked="FullscreenOff">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="3" ScaleY="3" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <CheckBox x:Name="SoundCheckBox" Grid.Column="1" HorizontalAlignment="Left"  Grid.Row="2" VerticalAlignment="Center" Height="17" Width="72" 
+                      Checked="SoundEffectOn" Unchecked="SoundEffectOff">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="3" ScaleY="3" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            
+        </Grid>
+
+        <Button Grid.Column="1" Content="{x:Static res:Strings.Valider}" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="54" Width="118" Click="ValiderParametre" FontSize="24" Background="#FF357F15"/>
+    </Grid>
+</Window>

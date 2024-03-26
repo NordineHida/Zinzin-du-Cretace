@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EffetsSonores" xml:space="preserve">
+    <value>Sound Effects :</value>
+    <comment>Check box's label for the sound effects</comment>
+  </data>
+  <data name="Fermer" xml:space="preserve">
+    <value>Close</value>
+    <comment>Button to close </comment>
+  </data>
+  <data name="Jouer" xml:space="preserve">
+    <value>Play</value>
+    <comment>Button to start the game</comment>
+  </data>
+  <data name="NomInput" xml:space="preserve">
+    <value>Name :</value>
+    <comment>Input's label to ask player's name</comment>
+  </data>
+  <data name="NomMeilleurScore" xml:space="preserve">
+    <value>Name</value>
+    <comment>Header of the high score column (name)</comment>
+  </data>
+  <data name="NomVide" xml:space="preserve">
+    <value>Error empty name</value>
+    <comment>Title of the window when the name is empty</comment>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause</value>
+    <comment>Button to pause the game</comment>
+  </data>
+  <data name="Perdu" xml:space="preserve">
+    <value>Game over ! :(</value>
+    <comment>PopUp when the player loses</comment>
+  </data>
+  <data name="PleinEcran" xml:space="preserve">
+    <value>Fullscreen :</value>
+    <comment>Label for the check box for the fullscreen</comment>
+  </data>
+  <data name="Rang" xml:space="preserve">
+    <value>Rank</value>
+    <comment>Header of the high score column (rank)</comment>
+  </data>
+  <data name="Rejouer" xml:space="preserve">
+    <value>Play Again</value>
+    <comment>Button to restart the game</comment>
+  </data>
+  <data name="SaisirNom" xml:space="preserve">
+    <value>Type your nickname</value>
+    <comment>PlaceHolder of the textbox to write the player's name</comment>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Score :</value>
+    <comment>Label for the score</comment>
+  </data>
+  <data name="ScoreMeilleurScore" xml:space="preserve">
+    <value>Score</value>
+    <comment>Header of the high score column (score)</comment>
+  </data>
+  <data name="Titre" xml:space="preserve">
+    <value>Zinzin Of The Cretace</value>
+    <comment>Name of the game window</comment>
+  </data>
+  <data name="TitreMeilleurScore" xml:space="preserve">
+    <value>High Score</value>
+    <comment>Title label of the high score</comment>
+  </data>
+  <data name="TitreParametre" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Title of the settings</comment>
+  </data>
+  <data name="Valider" xml:space="preserve">
+    <value>Submit</value>
+    <comment>Button of validation in the high score</comment>
+  </data>
+  <data name="VeuillezSaisirNom" xml:space="preserve">
+    <value>Please type a name</value>
+    <comment>Ask to the player to type a name </comment>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Volume :</value>
+    <comment>Label for the volume slider</comment>
+  </data>
+</root>
